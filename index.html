@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Memory Game</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
-    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Pacifico" rel="stylesheet prefetch">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -18,20 +19,26 @@
         </header>
 
         <section class="score-panel">
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
+            <ul class="stars">
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star"></i>
+                </li>
+            </ul>
 
-        	<span class="moves">0</span> Move(s)
+            <span class="moves">0</span> Move(s)
 
             <div class="timer">
             </div>
 
             <div class="restart" onclick=startGame()>
-        		<i class="fa fa-repeat"></i>
-        	</div>
+                <i class="fa fa-repeat"></i>
+            </div>
         </section>
 
         <ul class="deck" id="card-deck">
@@ -44,7 +51,7 @@
             <li class="card match" type="anchor">
                 <i class="fa fa-anchor"></i>
             </li>
-            <li class="card" type="bolt" >
+            <li class="card" type="bolt">
                 <i class="fa fa-bolt"></i>
             </li>
             <li class="card" type="cube">
@@ -88,16 +95,21 @@
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Congratulations!</h2>
-                <a class="close" href=# >×</a>
+                <a class="close" href=#>×</a>
                 <div class="content-1">
                     Congratulations you're a winner !
                 </div>
                 <div class="content-2">
-                    <p>You made <span id=finalMove> </span> moves </p>
-                    <p>in <span id=totalTime> </span> </p>
-                    <p>Rating:  <span id=starRating></span></p>
+                    <p>You made
+                        <span id=finalMove> </span> moves </p>
+                    <p>in
+                        <span id=totalTime> </span>
+                    </p>
+                    <p>Rating:
+                        <span id=starRating></span>
+                    </p>
                 </div>
-                <button id="play-again"onclick="playAgain()">
+                <button id="play-again" onclick="playAgain()">
                     Play again!</a>
                 </button>
             </div>
@@ -106,4 +118,5 @@
     </div>
     <script src="js/function.js"></script>
 </body>
+
 </html>
