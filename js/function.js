@@ -57,7 +57,7 @@ function startGame() {
   // remove all exisiting classes from each card
   for (var i = 0; i < cards.length; i++) {
     deck.innerHTML = '';
-    [].forEach.call(cards, function(item) {
+    [].forEach.call(cards, function (item) {
       deck.appendChild(item);
     });
     cards[i].classList.remove('show', 'open', 'match', 'disabled');
@@ -80,7 +80,7 @@ function startGame() {
 }
 
 // @description toggles open and show class to display cards
-var displayCard = function() {
+var displayCard = function () {
   this.classList.toggle('open');
   this.classList.toggle('show');
   this.classList.toggle('disabled');
@@ -114,7 +114,7 @@ function unmatched() {
   openedCards[0].classList.add('unmatched');
   openedCards[1].classList.add('unmatched');
   disable();
-  setTimeout(function() {
+  setTimeout(function () {
     openedCards[0].classList.remove('show', 'open', 'no-event', 'unmatched');
     openedCards[1].classList.remove('show', 'open', 'no-event', 'unmatched');
     enable();
@@ -124,14 +124,14 @@ function unmatched() {
 
 // @description disable cards temporarily
 function disable() {
-  Array.prototype.filter.call(cards, function(card) {
+  Array.prototype.filter.call(cards, function (card) {
     card.classList.add('disabled');
   });
 }
 
 // @description enable cards and disable matched cards
 function enable() {
-  Array.prototype.filter.call(cards, function(card) {
+  Array.prototype.filter.call(cards, function (card) {
     card.classList.remove('disabled');
     for (var i = 0; i < matchedCard.length; i++) {
       matchedCard[i].classList.add('disabled');
@@ -173,7 +173,7 @@ hour = 0;
 var timer = document.querySelector('.timer');
 var interval;
 function startTimer() {
-  interval = setInterval(function() {
+  interval = setInterval(function () {
     timer.innerHTML = minute + ' mins ' + second + ' secs';
     second++;
     if (second == 60) {
@@ -211,7 +211,7 @@ function congratulations() {
 
 // @description close icon on modal
 function closeModal() {
-  closeicon.addEventListener('click', function(e) {
+  closeicon.addEventListener('click', function (e) {
     modal.classList.remove('show');
     startGame();
   });

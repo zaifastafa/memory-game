@@ -110,6 +110,7 @@ h1 {
  */
 
 .score-panel {
+  color:antiquewhite;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -175,7 +176,7 @@ h1 {
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Caveat Brush', cursive;
 }
 
 .popup .close {
