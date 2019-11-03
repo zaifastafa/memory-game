@@ -1,0 +1,26 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "A basic memory game to select matching tiles",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://huzaifa_m@bitbucket.org/huzaifa_m/memory-game.git"
+  },
+  "keywords": [
+    "memory",
+    "game",
+    "html",
+    "electron",
+    "game"
+  ],
+  "author": "Huzaifa Mustafa",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/huzaifa_m/memory-game#readme",
+  "devDependencies": {
+    "electron": "^7.0.1"
+  }
+}
