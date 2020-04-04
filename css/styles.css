@@ -20,7 +20,7 @@ body {
   background: url('../images/bg.jpeg');
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Caveat Brush', cursive;
+  font-family: 'Kalam', cursive;
   font-size: 16px;
 }
 
@@ -32,8 +32,9 @@ body {
 }
 
 h1 {
-  font-family: 'Pacifico', cursive;
-  color: #e2043b;
+  font-family: 'Luckiest Guy', cursive;
+  color: #d7e204;
+  letter-spacing: 4px;
 }
 
 /*
@@ -170,13 +171,13 @@ h1 {
   width: 85%;
   position: relative;
   transition: all 5s ease-in-out;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Luckiest Guy', cursive;
 }
 
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-family: 'Caveat Brush', cursive;
+  font-family: 'Kalam', cursive;
 }
 
 .popup .close {
@@ -217,7 +218,7 @@ h1 {
   display: block;
   margin: 0 auto;
   width: 50%;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Luckiest Guy', cursive;
   color: #ffffff;
   border-radius: 5px;
 }
@@ -328,4 +329,14 @@ h1 {
   .popup {
     width: 60%;
   }
+}
+
+.subtitle {
+  color: #d7e204;
+  text-align: center;
+  font-size: 14px;
+}
+
+.subtitle a {
+  color: #d7e204;
 }
